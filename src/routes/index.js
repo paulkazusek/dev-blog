@@ -3,8 +3,7 @@ const router = express.Router()
 
 router.get( '/', ( request, response, next ) => {
     response.locals = {
-        title: 'Welcome',
-        message: 'welcome',
+        title: 'Welcome'
     }
     response.render( 'pages/index' )
 })
