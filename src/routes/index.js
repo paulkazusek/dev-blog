@@ -15,4 +15,11 @@ router.get( '/me', ( request, response, next ) => {
     response.render( 'pages/about' )
 })
 
+router.get( '/blog', ( request, response, next ) => {
+    response.locals = {
+        title: 'Articles | Paul Kazusek'
+    }
+    response.render( 'pages/blog' )
+})
+
 module.exports = router
