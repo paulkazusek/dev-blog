@@ -1,0 +1,121 @@
+{
+    "posts": [
+        {
+            "author": "Paul Kazusek",
+            "date": "January 1, 2021",
+            "title": "Featured Post Title 1",
+            "url": "featured-post-title2",
+            "preview": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!",
+            "category": "web development",
+            "tags": ["angular", "javascript"]
+          },
+          {
+            "author": "Paul Kazusek",
+            "date": "2020-02-03T00:00:00",
+            "title": "Featured Post Title 2",
+            "url": "featured-post-title2",
+            "preview": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!",
+            "category": "software development",
+            "tags": []
+          },
+          {
+            "author": "Paul Kazusek",
+            "date": "2020-02-03T00:00:00",
+            "title": "Featured Post Title 3",
+            "url": "featured-post-title3",
+            "preview": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!",
+            "category": "web development",
+            "tags": ["ionic", "javascript"]
+          },
+          {
+            "author": "Paul Kazusek",
+            "date": "2020-02-03T00:00:00",
+            "title": "Featured Post Title 4",
+            "url": "featured-post-title4",
+            "preview": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!",
+            "category": "software development",
+            "tags": []
+          },
+          {
+            "author": "Paul Kazusek",
+            "date": "2020-02-03T00:00:00",
+            "title": "Featured Post Title 5",
+            "url": "featured-post-title5",
+            "preview": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!",
+            "category": "web development",
+            "tags": ["typescript"]
+          },
+          {
+            "author": "Paul Kazusek",
+            "date": "2020-02-03T00:00:00",
+            "title": "Featured Post Title 6",
+            "url": "featured-post-title6",
+            "preview": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!",
+            "category": "software development",
+            "tags": []
+          },
+          {
+            "author": "Paul Kazusek",
+            "date": "2020-02-03T00:00:00",
+            "title": "Featured Post Title 7",
+            "url": "featured-post-title7",
+            "preview": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!",
+            "category": "web development",
+            "tags": ["angular"]
+          },
+          {
+            "author": "Paul Kazusek",
+            "date": "2020-02-03T00:00:00",
+            "title": "Featured Post Title 8",
+            "url": "featured-post-title8",
+            "preview": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!",
+            "category": "software development",
+            "tags": []
+          },
+          {
+            "author": "Paul Kazusek",
+            "date": "2020-02-03T00:00:00",
+            "title": "Featured Post Title 9",
+            "url": "featured-post-title9",
+            "preview": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!",
+            "category": "web development",
+            "tags": ["ionic", "javascript"]
+          },
+          {
+            "author": "Paul Kazusek",
+            "date": "2020-02-03T00:00:00",
+            "title": "Featured Post Title 10",
+            "url": "featured-post-title10",
+            "preview": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!",
+            "category": "software development",
+            "tags": []
+          },
+          {
+            "author": "Paul Kazusek",
+            "date": "2020-02-03T00:00:00",
+            "title": "Featured Post Title 11",
+            "url": "featured-post-title11",
+            "preview": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!",
+            "category": "web development",
+            "tags": ["typescript"]
+          },
+          {
+            "author": "Paul Kazusek",
+            "date": "2020-02-03T00:00:00",
+            "title": "Featured Post Title 12",
+            "url": "featured-post-title12",
+            "preview": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!",
+            "category": "software development",
+            "tags": []
+          },
+          {
+            "author": "Paul Kazusek",
+            "date": "2020-02-03T00:00:00",
+            "title": "Featured Post Title 13",
+            "url": "featured-post-title13",
+            "preview": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!",
+            "category": "web development",
+            "tags": [ "angular" ]
+          }
+    ]
+  }

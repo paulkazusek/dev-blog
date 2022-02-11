@@ -1,4 +1,6 @@
 import express from 'express'
+import * as data from '../data/post.json'
+
 const router = express.Router()
 
 router.get( '/', ( request, response, next ) => {
@@ -15,11 +17,68 @@ router.get( '/me', ( request, response, next ) => {
     response.render( 'pages/about' )
 })
 
-router.get( '/blog', ( request, response, next ) => {
-    response.locals = {
-        title: 'Articles | Paul Kazusek'
+router.get('/blog', (request, response, next) => {
+    const page = request.query.page != undefined ? request.query.page : 1
+    const limit = request.query.limit != undefined ? request.query.limit : 5
+    const category = request.query.category
+    let tags = request.query.tags != undefined ? request.query.tags : ''
+
+    if (!tags || tags.length > 0) {
+        tags = tags.split(',').sort()
     }
-    response.render( 'pages/blog' )
+
+    const startIndex = (page - 1) * limit
+    const endIndex = page * limit
+
+    let posts = data.posts
+
+    if (category != undefined) {
+        posts = posts.filter((post) => post.category === category)
+    }
+
+    if (Array.isArray(tags)) {
+        let temp = []
+        posts.forEach((post) => {
+            let intersection = post.tags.filter((tag) => tags.includes(tag)).sort()
+            if (
+                tags.length === intersection.length &&
+                tags.every((value, index) => value === intersection[index])
+            ) {
+                temp.push(post)
+            }
+        })
+        posts = temp
+    }
+
+    const pagination = {}
+
+    if (startIndex > 0) {
+        pagination.previous = {
+            page: parseInt(page) - 1,
+        }
+    }
+
+    if (endIndex < posts.length) {
+        pagination.next = {
+            page: parseInt(page) + 1,
+        }
+    }
+
+    pagination.limit = limit
+    pagination.currentPage = parseInt(page)
+    pagination.pageCount = parseInt(Math.ceil(posts.length / limit))
+
+    const shareArticles = posts.slice(startIndex, endIndex)
+
+    console.log(shareArticles)
+
+    response.locals = {
+        title: 'Articles | Paul Kazusek',
+        articles: shareArticles,
+        pagination: pagination,
+    }
+
+    response.render('pages/blog')
 })
 
 module.exports = router
