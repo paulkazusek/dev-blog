@@ -21,14 +21,7 @@ router.get('/blog', (request, response, next) => {
     const page = request.query.page != undefined ? request.query.page : 1
     const limit = request.query.limit != undefined ? request.query.limit : 5
     const category = request.query.category
-    let tags = request.query.tags != undefined ? request.query.tags : ''
-
-    if (!tags || tags.length > 0) {
-        tags = tags.split(',').sort()
-    }
-
-    const startIndex = (page - 1) * limit
-    const endIndex = page * limit
+    let tags = request.query.tags != undefined ? request.query.tags.split(',').sort() : []
 
     let posts = data.posts
 
@@ -36,7 +29,7 @@ router.get('/blog', (request, response, next) => {
         posts = posts.filter((post) => post.category === category)
     }
 
-    if (Array.isArray(tags)) {
+    if (Array.isArray(tags) && tags.length > 0) {
         let temp = []
         posts.forEach((post) => {
             let intersection = post.tags.filter((tag) => tags.includes(tag)).sort()
@@ -51,6 +44,8 @@ router.get('/blog', (request, response, next) => {
     }
 
     const pagination = {}
+    const startIndex = (page - 1) * limit
+    const endIndex = page * limit
 
     if (startIndex > 0) {
         pagination.previous = {
