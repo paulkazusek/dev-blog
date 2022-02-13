@@ -68,7 +68,7 @@ router.get('/blog', (request, response, next) => {
     console.log(shareArticles)
 
     response.locals = {
-        title: 'Articles | Paul Kazusek',
+        title: 'Posts | Paul Kazusek',
         articles: shareArticles,
         pagination: pagination,
     }
