@@ -1,5 +1,5 @@
 import express from 'express'
-import * as data from '../data/post.json'
+import * as data from '../data/posts.json'
 
 const router = express.Router()
 
@@ -21,7 +21,7 @@ router.get('/blog', (request, response, next) => {
     const page = request.query.page != undefined ? request.query.page : 1
     const limit = request.query.limit != undefined ? request.query.limit : 5
     const category = request.query.category
-    let tags = request.query.tags != undefined ? request.query.tags.split(',').sort() : []
+    const tags = request.query.tags != undefined ? request.query.tags.split(',').sort() : []
 
     let posts = data.posts
 
