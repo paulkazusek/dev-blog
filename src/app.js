@@ -3,6 +3,7 @@ import expressLayouts from 'express-ejs-layouts'
 import path from 'path'
 
 import indexRouter from './routes/index'
+import postsRoute from './routes/posts';
 
 const app = express()
 app.set( 'port', 3000 )
@@ -17,6 +18,7 @@ app.use( '/css', express.static( path.join( __dirname, '../node_modules/bootstra
 app.use( '/js', express.static( path.join( __dirname, '../node_modules/bootstrap/dist/js' ) ) )
 
 app.use( '/', indexRouter )
+app.use( '/post', postsRoute )
 
 app.listen( 3000, () => {
     console.log( 'Express server listening on port ' + app.get( 'port' ) )
