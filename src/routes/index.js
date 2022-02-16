@@ -65,7 +65,7 @@ router.get('/blog', (request, response, next) => {
 
     const shareArticles = posts.slice(startIndex, endIndex)
 
-    console.log(shareArticles)
+    // console.log(shareArticles)
 
     response.locals = {
         title: 'Posts | Paul Kazusek',

@@ -1,0 +1,15 @@
+<figure class="mb-4"><img class="img-fluid rounded" src=<%= post.image %> alt="..." /></figure>
+
+<header class="mb-4">
+    <!-- Post title -->
+    <h1 class="fw-bolder mb-1"><%= post.title %></h1>
+    <div class="text-muted mb-2"><%= post.date %> by <%= post.author %></div>
+    
+    <!-- Post categories-->
+    <a class="badge bg-primary text-decoration-none link-light" href="/blog?category=<%= post.category %>"><%= post.category %></a>
+    
+    <!-- Post tags-->
+    <% post.tags.forEach( tag => { %>
+        <a class="badge bg-secondary text-decoration-none link-light" href="/blog?tags=<%= tag %>"><%= tag %></a>
+    <% }) %>
+</header>

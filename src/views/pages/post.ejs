@@ -7,7 +7,8 @@
                 <div class="card">
                     <div class="card-body">
                         <article>
-                        <%- include( '../posts/' + content ) %> 
+                        <%- include( '../partials/header-post', { post: post } ) %>
+                        <%- include( '../posts/' + content ) %>
                         </article>
                     </div>
                 </div>

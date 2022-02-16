@@ -18,7 +18,7 @@ app.use( '/css', express.static( path.join( __dirname, '../node_modules/bootstra
 app.use( '/js', express.static( path.join( __dirname, '../node_modules/bootstrap/dist/js' ) ) )
 
 app.use( '/', indexRouter )
-app.use( '/post', postsRoute )
+app.use( '/', postsRoute )
 
 app.listen( 3000, () => {
     console.log( 'Express server listening on port ' + app.get( 'port' ) )
