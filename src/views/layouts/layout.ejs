@@ -10,6 +10,9 @@
     <script type="text/javascript" src="../js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="../js/fontawesome.js"></script>
     <script type="text/javascript" src="../js/brands.js"></script>
+    <% if( locals.prismjs ) { %> 
+<%- include('../partials/include-prismjs') %>
+    <% } %>
 </head>
 <body>
     <div class="d-flex flex-column sticky-footer-wrapper min-vh-100">

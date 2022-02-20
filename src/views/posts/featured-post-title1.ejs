@@ -1,1 +1,60 @@
-<p>test...</p>
+<h2>CSS</h2>
+
+<pre class="line-numbers">
+<code class="language-css">.example {
+    font-family: Georgia, Times, serif;
+    color: #555;
+    text-align: center;
+}</code>
+</pre>
+
+<h2>Bash</h2>
+
+<pre class="command-line" data-prompt="~/build/express" data-output="2-13"><code class="language-bash">npm init -y
+{
+    "name": "express",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+}</code></pre>
+
+<h2>JavaScript</h2>
+
+<pre class="line-numbers" data-line="1-5"><code class="language-javascript">// use the express module
+const express = require('express')
+
+// create an object of the express module
+const app = express()
+
+// create a property port and set the value 3000
+app.set('port', process.env.PORT || 3000)
+
+// create a callback function, which send a 'Hello World!'response
+app.get('/', (request, response) => {
+    response.send('Hello World!')
+})
+
+// the server listen on port 3000
+app.listen(app.get('port'), () => {
+    console.log('Express server listening on port ' + app.get('port'))
+})</code></pre>
+
+
+<h2>C++</h2>
+
+<pre class="line-numbers"><code class="language-cpp">#include &lt;iostream>
+
+int main(void)
+{
+    std::cout &lt;&lt; "hello world" &lt;&lt; std::endl;
+    return EXIT_SUCCESS;
+}
+</code></pre>
+
+

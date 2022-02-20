@@ -14,7 +14,8 @@ router.get( '/post/featured-post-title1', (request, response) => {
     response.locals = {
         title: 'featured post title1 | Paul Kazusek',
         post: post,
-        content: 'featured-post-title1'
+        content: 'featured-post-title1',
+        prismjs: true
     }
     response.render( 'pages/post' )
 })
