@@ -4,9 +4,12 @@ import path from 'path'
 
 import indexRouter from './routes/index'
 import postsRoute from './routes/posts';
+import requestLogger from './request-logger'
 
 const app = express()
 app.set( 'port', 3000 )
+
+app.use( requestLogger )
 
 app.use( expressLayouts )
 app.set( 'views', path.join( __dirname, './views' ) )
