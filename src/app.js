@@ -4,12 +4,13 @@ import path from 'path'
 
 import indexRouter from './routes/index'
 import postsRoute from './routes/posts';
-import requestLogger from './request-logger'
+import { accessLogger, errorLogger } from './request-logger'
 
 const app = express()
-app.set( 'port', 3000 )
+app.set( 'port', process.env.PORT || 3000 )
 
-app.use( requestLogger )
+app.use( accessLogger )
+app.use( errorLogger )
 
 app.use( expressLayouts )
 app.set( 'views', path.join( __dirname, './views' ) )
@@ -25,6 +26,6 @@ app.use( '/prismjs', express.static( path.join( __dirname, '../node_modules/pris
 app.use( '/', indexRouter )
 app.use( '/', postsRoute )
 
-app.listen( 3000, () => {
-    console.log( 'Express server listening on port ' + app.get( 'port' ) )
+app.listen( app.get( 'port' ) , () => {
+    console.debug( 'Express server listening on port ' + app.get( 'port' ) )
 })
